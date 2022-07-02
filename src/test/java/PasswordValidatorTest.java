@@ -1,22 +1,35 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class MainTest {
+class PasswordValidatorTest {
 
 
     @Test
-    void numberControl(){
+    void checkPasswordLength(){
         //given
         String number="abcdefgh";
 
         //when
-        int numberPassword= Main.numberControl(number);
+        int numberPassword= PasswordValidator.checkPasswordLength(number);
         int exspected=8;
 
         //then
         Assertions.assertEquals(exspected,numberPassword );
+
+    }
+
+    @Test
+    void passwordIsLongEnough(){
+
+        //given
+        String pwUser="hahhaddd";
+
+        //when
+        boolean actual=PasswordValidator.isLongThen8(pwUser);
+        boolean expected=true;
+
+        //then
+        Assertions.assertEquals(expected, actual);
 
     }
 
@@ -27,7 +40,7 @@ class MainTest {
         String password="123hh";
 
         //when
-        boolean numbers=Main.onlyNumber(password);
+        boolean numbers= PasswordValidator.onlyNumber(password);
         boolean expected=true;
 
         //when
@@ -44,7 +57,7 @@ class MainTest {
         String password="bkadk§§AAA";
 
         //when
-        boolean result=Main.upperLowerCase(password);
+        boolean result= PasswordValidator.upperLowerCase(password);
         boolean expected=true;
 
         //then
@@ -59,7 +72,7 @@ class MainTest {
         String passwords="password";
 
         //when
-        boolean result= Main.badPassword(passwords);
+        boolean result= PasswordValidator.badPassword(passwords);
         boolean expected=false;
 
         //then

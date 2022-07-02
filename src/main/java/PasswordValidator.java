@@ -1,19 +1,23 @@
-public class Main {
+public class PasswordValidator {
 
     public static void main(String[] args) {
 
 
 
-        System.out.println(badPassword("password"));
+        System.out.println(checkPasswordLength("12345678"));
 
     }
 
 
-    public static int numberControl(String passwordInput){
+    public static int checkPasswordLength(String pwUser){
 
-        int passwordLenght=passwordInput.length();
+        int pwLengthIs=pwUser.length();
 
-        return passwordLenght;
+        return pwLengthIs;
+    }
+
+    public static boolean isLongThen8(String pwUser) {
+        return pwUser.length() >=8;
     }
 
     public static boolean onlyNumber(String passwordInput){
@@ -74,4 +78,6 @@ return false;
 return true;
 
     }
+
+
 }

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0d48951-553c-44fe-aed1-74360615b87d" name="Changes" comment="add check for password length">
+    <list default="true" id="e0d48951-553c-44fe-aed1-74360615b87d" name="Changes" comment="add check for Digits and no Digits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PasswordValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PasswordValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PasswordValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PasswordValidatorTest.java" afterDir="false" />
@@ -57,7 +57,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PasswordValidatorTest.passwordContainsNumbers">
+  <component name="RunManager" selected="JUnit.PasswordValidatorTest.isValid (1)">
     <configuration name="PasswordValidator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PasswordValidator" />
       <module name="passwordValidator" />
@@ -65,11 +65,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordValidatorTest.checkPasswordLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PasswordValidatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="passwordValidator" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PasswordValidatorTest" />
-      <option name="METHOD_NAME" value="checkPasswordLength" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordValidatorTest.isValid (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="passwordValidator" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PasswordValidatorTest" />
+      <option name="METHOD_NAME" value="isValid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordValidatorTest.isValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="passwordValidator" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PasswordValidatorTest" />
+      <option name="METHOD_NAME" value="isValid(java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -85,33 +104,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordValidatorTest.passwordContainsNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="passwordValidator" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PasswordValidatorTest" />
-      <option name="METHOD_NAME" value="passwordContainsNumbers" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PasswordValidatorTest.passwordIsLongEnough" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="passwordValidator" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PasswordValidatorTest" />
-      <option name="METHOD_NAME" value="passwordIsLongEnough" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PasswordValidatorTest.passwordContainsNumbers" />
-        <item itemvalue="JUnit.PasswordValidatorTest.passwordContainsNoNumbers" />
+        <item itemvalue="JUnit.PasswordValidatorTest.isValid (1)" />
+        <item itemvalue="JUnit.PasswordValidatorTest.isValid" />
         <item itemvalue="Application.PasswordValidator" />
-        <item itemvalue="JUnit.PasswordValidatorTest.passwordIsLongEnough" />
-        <item itemvalue="JUnit.PasswordValidatorTest.checkPasswordLength" />
+        <item itemvalue="JUnit.PasswordValidatorTest" />
+        <item itemvalue="JUnit.PasswordValidatorTest.passwordContainsNoNumbers" />
       </list>
     </recent_temporary>
   </component>
@@ -125,7 +124,7 @@
       <updated>1656669436059</updated>
       <workItem from="1656669437315" duration="4673000" />
       <workItem from="1656677039411" duration="8163000" />
-      <workItem from="1656757065512" duration="4548000" />
+      <workItem from="1656757065512" duration="6434000" />
     </task>
     <task id="LOCAL-00001" summary="add test for the task">
       <created>1656686130375</created>
@@ -148,7 +147,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656760312025</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add check for Digits and no Digits">
+      <created>1656768926105</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656768926105</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add check for Digits and no Digits">
+      <created>1656769200589</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656769200589</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +181,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add test for the task" />
     <MESSAGE value="add check for password length" />
-    <option name="LAST_COMMIT_MESSAGE" value="add check for password length" />
+    <MESSAGE value="add check for Digits and no Digits" />
+    <option name="LAST_COMMIT_MESSAGE" value="add check for Digits and no Digits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -181,6 +195,11 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/PasswordValidator.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

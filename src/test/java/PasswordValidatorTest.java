@@ -56,6 +56,45 @@ class PasswordValidatorTest {
         //then
         Assertions.assertEquals(expected, actual);
     }
+
+    void passwordContainsNoDigitsButIsLongEnough(String pwUser){
+        //Given
+         pwUser="ddddiiii";
+
+        //when
+        boolean actual=PasswordValidator.isValid(pwUser);
+        boolean expacted=false;
+
+        //then
+        Assertions.assertEquals(expacted, actual);
+    }
+
+    void passwordContainsNoDigitsButIsNotLongEnough(String pwUser){
+        //Given
+         pwUser="ddddiiii";
+
+        //when
+        boolean actual=PasswordValidator.isValid(pwUser);
+        boolean expacted=false;
+
+        //then
+        Assertions.assertEquals(expacted, actual);
+    }
+
+
+
+    @Test
+    void isValid(){
+        //Given
+       String pwUser="ddddi345";
+
+        //when
+        boolean actual=PasswordValidator.isValid(pwUser);
+        boolean expacted=true;
+
+        //then
+        Assertions.assertEquals(expacted, actual);
+    }
     @Test
     void onlyNumber(){
 

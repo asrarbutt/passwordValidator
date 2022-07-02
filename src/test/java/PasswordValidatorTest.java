@@ -22,7 +22,7 @@ class PasswordValidatorTest {
     void passwordIsLongEnough(){
 
         //given
-        String pwUser="hahhaddd";
+        String pwUser="asbddddd";
 
         //when
         boolean actual=PasswordValidator.isLongThen8(pwUser);

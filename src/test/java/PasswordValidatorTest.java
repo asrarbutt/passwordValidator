@@ -34,6 +34,29 @@ class PasswordValidatorTest {
     }
 
     @Test
+    void passwordContainsNumbers(){
+        //given
+        String pwUser="test1234";
+
+        //when
+        boolean actual=PasswordValidator.containNumbers(pwUser);
+        boolean expected=true;
+
+        //then
+        Assertions.assertEquals(expected, actual);
+    }    @Test
+    void passwordContainsNoNumbers(){
+        //given
+        String pwUser="test";
+
+        //when
+        boolean actual=PasswordValidator.containNumbers(pwUser);
+        boolean expected=false;
+
+        //then
+        Assertions.assertEquals(expected, actual);
+    }
+    @Test
     void onlyNumber(){
 
         //given

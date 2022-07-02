@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0d48951-553c-44fe-aed1-74360615b87d" name="Changes" comment="add test for the task">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PasswordValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PasswordValidatorTest.java" afterDir="false" />
+    <list default="true" id="e0d48951-553c-44fe-aed1-74360615b87d" name="Changes" comment="add check for password length">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PasswordValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PasswordValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PasswordValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PasswordValidatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -57,20 +57,10 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PasswordValidatorTest.passwordIsLongEnough">
+  <component name="RunManager" selected="JUnit.PasswordValidatorTest.passwordContainsNumbers">
     <configuration name="PasswordValidator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PasswordValidator" />
       <module name="passwordValidator" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PasswordValidatorTest.badPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="passwordValidator" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PasswordValidatorTest" />
-      <option name="METHOD_NAME" value="badPassword" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -80,6 +70,26 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="PasswordValidatorTest" />
       <option name="METHOD_NAME" value="checkPasswordLength" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordValidatorTest.passwordContainsNoNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="passwordValidator" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PasswordValidatorTest" />
+      <option name="METHOD_NAME" value="passwordContainsNoNumbers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PasswordValidatorTest.passwordContainsNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="passwordValidator" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PasswordValidatorTest" />
+      <option name="METHOD_NAME" value="passwordContainsNumbers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,23 +105,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PasswordValidatorTest.upperLowerCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="passwordValidator" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PasswordValidatorTest" />
-      <option name="METHOD_NAME" value="upperLowerCase" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PasswordValidatorTest.passwordIsLongEnough" />
+        <item itemvalue="JUnit.PasswordValidatorTest.passwordContainsNumbers" />
+        <item itemvalue="JUnit.PasswordValidatorTest.passwordContainsNoNumbers" />
         <item itemvalue="Application.PasswordValidator" />
+        <item itemvalue="JUnit.PasswordValidatorTest.passwordIsLongEnough" />
         <item itemvalue="JUnit.PasswordValidatorTest.checkPasswordLength" />
-        <item itemvalue="JUnit.PasswordValidatorTest.badPassword" />
-        <item itemvalue="JUnit.PasswordValidatorTest.upperLowerCase" />
       </list>
     </recent_temporary>
   </component>
@@ -125,7 +125,7 @@
       <updated>1656669436059</updated>
       <workItem from="1656669437315" duration="4673000" />
       <workItem from="1656677039411" duration="8163000" />
-      <workItem from="1656757065512" duration="2312000" />
+      <workItem from="1656757065512" duration="4548000" />
     </task>
     <task id="LOCAL-00001" summary="add test for the task">
       <created>1656686130375</created>
@@ -134,7 +134,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656686130375</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add check for password length">
+      <created>1656760126100</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656760126100</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add check for password length">
+      <created>1656760312025</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656760312025</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +167,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add test for the task" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test for the task" />
+    <MESSAGE value="add check for password length" />
+    <option name="LAST_COMMIT_MESSAGE" value="add check for password length" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -4,7 +4,7 @@ public class PasswordValidator {
 
 
 
-        System.out.println(checkPasswordLength("12345678"));
+        System.out.println(containNumbers("ddd"));
 
     }
 
@@ -20,6 +20,22 @@ public class PasswordValidator {
         return pwUser.length() >=8;
     }
 
+
+    public static boolean containNumbers(String pwUser) {
+
+
+        for (char d: pwUser.toCharArray()) {
+            if(Character.isDigit(d)){
+                return true;
+            }
+        }
+
+
+
+
+        return false;
+
+    }
     public static boolean onlyNumber(String passwordInput){
 
         int i=0;
@@ -78,6 +94,7 @@ return false;
 return true;
 
     }
+
 
 
 }

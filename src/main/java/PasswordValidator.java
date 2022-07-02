@@ -4,11 +4,14 @@ public class PasswordValidator {
 
 
 
-        System.out.println(checkPasswordLength("12345678"));
+        System.out.println(isValid("ddde1234"));
 
     }
 
+    public static boolean isValid(String pwUser) {
 
+        return containNumbers(pwUser)&& isLongThen8(pwUser);
+    }
     public static int checkPasswordLength(String pwUser){
 
         int pwLengthIs=pwUser.length();
@@ -19,6 +22,22 @@ public class PasswordValidator {
     public static boolean isLongThen8(String pwUser) {
         return pwUser.length() >=8;
     }
+
+
+    public static boolean containNumbers(String pwUser) {
+
+
+        for (char d: pwUser.toCharArray()) {
+            if(Character.isDigit(d)){
+                return true;
+            }
+        }
+
+
+        return false;
+
+    }
+
 
     public static boolean onlyNumber(String passwordInput){
 
@@ -78,6 +97,7 @@ return false;
 return true;
 
     }
+
 
 
 }

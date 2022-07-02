@@ -86,7 +86,7 @@ class PasswordValidatorTest {
     @Test
     void isValid(){
         //Given
-       String pwUser="ddddi345";
+       String pwUser="ddddi346";
 
         //when
         boolean actual=PasswordValidator.isValid(pwUser);
